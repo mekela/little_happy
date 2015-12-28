@@ -1,0 +1,27 @@
+// Normally mainpage styles
+ 
+ /*----------header----------*/
+
+ .header{
+	@include povh('');
+ }
+	
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+ }
+
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/
