@@ -368,7 +368,54 @@
 /*----------footer----------*/
  
  .footer{
+ 	margin: 30px 0 0 0;
 	@include povh('');
+	background:#f9f7f8;
+	padding: 26px 0 0 0;
  }
+	.copyright{
+		background:#fff;
+		color: #a09fa0;
+		font-size: 14px;
+		font-family: $fontfamily;
+		text-align: center;
+		div{
+			padding: 21px 0 ;
+		}
+	}
+	.footer_info{
+		padding-bottom: 29px;
+	}
+	.foot_contacts{
+		font-size: 24px;
+		color: #5b4380;
+		font-family: $fontfamily;
+		a{
+			display: block;
+			margin-bottom: 14px;
+			text-decoration: none;
+			padding-left: 40px;
+			position: relative;
+			img{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
 
+		}
+	}
+	.footer_info ul{
+		color: #543060;
+		font-size: 18px;
+		font-family: $fontfamily;
+		line-height: 32px;
+	}
+	.foot_info_bottom{
+		padding-top: 33px;
+	}
+		.counters{
+			img{
+				padding: 0 10px 0 0;
+			}
+		}
 /*----------end footer----------*/
