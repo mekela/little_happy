@@ -66,7 +66,8 @@
 	<!---     menu        -->
 	<div class="container-fluid main_menu">
 		<div class="container">
-			<ul class="nav nav-pills nav-justified">
+			<div class="menu_trigger js_show_menu">МЕНЮ</div>
+			<ul class="nav nav-pills nav-justified dropdown-nav"  aria-labelledby="dLabel">
 			  <li><a href="#">Главная</a></li>
 			  <li><a href="#">О нас </a></li>
 			  <li role="presentation" class="dropdown">
@@ -141,7 +142,7 @@
 		<div class="title">Новинки нашего магазина</div>
 		<div class="products_block">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -156,7 +157,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -171,7 +172,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -186,7 +187,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -211,25 +212,25 @@
 		<div class="container">
 			<div class="title">Преимущества нашего магазина</div>
 			<div class="preference_block row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<div class="preference_item">
 						<figure><figcaption><img src="img/tag_img1.png" alt=""></figcaption></figure>
 						<p>Лучшее для родителей  и   их  « маленького счастья» по доступным ценам</p>
 					</div>
 				</div>	
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<div class="preference_item">
 						<figure><figcaption><img src="img/tag_img2.png" alt=""></figcaption></figure>
 						<p>Постоянным клиентам гибкая система скидок</p>
 					</div>
 				</div>	
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<div class="preference_item">
 						<figure><figcaption><img src="img/tag_img3.png" alt=""></figcaption></figure>
 						<p>Гарантия качества товара  соответствующего всем мировым стандартам</p>
 					</div>
 				</div>	
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<div class="preference_item">
 						<figure><figcaption><img src="img/tag_img4.png" alt=""></figcaption></figure>
 						<p>Отправка товара в день оформления заказа</p>
@@ -245,7 +246,7 @@
 		<div class="title">Новинки нашего магазина</div>
 		<div class="products_block">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3  col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -260,7 +261,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3  col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -275,7 +276,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3  col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -290,7 +291,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3  col-sm-6">
 					<div class="products_item">
 						<figure>
 							<a href="#"><img src="img/product.jpg" alt=""></a>
@@ -313,11 +314,11 @@
 	<!--about-->
 	<div class="about_index container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3  col-sm-4">
 				<h6><b>Несколько слов</b> о магазине</h6>
 				<figure><img src="img/logo_bottom.png" alt=""></figure>
 			</div>
-			<article class="col-md-9">
+			<article class="col-md-9  col-sm-8">
 				<blockquote>Иррациональное в творчестве, в первом приближении, представляет собой культовый образ. Классицизм органичен. Нивелирование индивидуальности синхронно.
 				</blockquote>
 				<p>
@@ -335,7 +336,7 @@
 		<div class="row">
 			<div class="col-md-9">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-4">
 						<div class="foot_contacts">
 							<a href="skype:Little-happy">
 							<img src="img/icons/skype.png" alt="">Little-happy</a>
@@ -343,8 +344,8 @@
 							<a href="#"><img src="img/fb.png" alt="">&nbsp;</a>
 						</div>
 					</div>
-					<div class="col-md-9">
-						<div class="col-md-4">
+					<div class="col-md-9 col-sm-8 foot_all_menu">
+						<div class="col-md-4 col-sm-6">
 							<ul>
 								<li><a href="#">О нас</a></li>
 								<li><a href="#">Как заказать</a></li>
@@ -353,7 +354,7 @@
 								<li><a href="#">Отзывы</a></li>
 							</ul>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-6">
 							<ul>
 								<li><a href="#">Постельное бельё</a></li>
 								<li><a href="#">Пледы</a></li>
@@ -362,7 +363,7 @@
 								<li><a href="#">Комбинезоны</a></li>
 							</ul>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-6  col-sm-offset-6">
 							<ul>
 								<li><a href="#">Боди , песочники</a></li>
 								<li><a href="#">Костюмы для мальчиков</a></li>
@@ -386,7 +387,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 hide_on_mobile">
 				<img src="http://placehold.it/295x229" alt="">
 			</div>
 		</div>

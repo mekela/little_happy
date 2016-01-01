@@ -8,6 +8,11 @@ $(document).ready(function() {
 		}
 	});
 	
+	//show menu
+	$( ".js_show_menu" ).click(function() {
+	  $( "ul.nav" ).slideToggle( "slow");
+	});
+
 	//bxslider
 	$('.bxslider').bxSlider({
 	  nextSelector: '#slider-next',
@@ -16,3 +21,5 @@ $(document).ready(function() {
 	  prevText: '← Go back'
 	});
 });
+
+

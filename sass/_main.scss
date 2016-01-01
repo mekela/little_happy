@@ -90,6 +90,9 @@
 		}
 
 	/*--------------main-menu------------*/
+	.menu_trigger{
+		display: none;
+	}
 	.main_menu{
 		background:$white;
 		height: 57px;
@@ -223,6 +226,7 @@
 					a{
 						display: block;
 						@include povh('');
+						text-align: center;
 						transition: all 0.5s ease;
 						&:hover {
 							img{
@@ -305,6 +309,7 @@
 				width: 186px;
 				height: 186px;
 				border-radius: 50%;
+				box-shadow: 0 5px 10px rgba(54,54,54, .24);
 				background-color: #fff;
 				padding: 16px;
 				box-sizing: border-box;

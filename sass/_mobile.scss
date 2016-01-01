@@ -1,17 +1,140 @@
 // Normally mainpage styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
-//styles for custom device width
+//styles for ipad horz
+@include mq($max-width: 1024px) {
+  img{
+  	max-width: 100%;
+  }
+  .foot_contacts{
+  	font-size: 17px;
+  }
+}
+
+//styles for ipad vert
 @include mq($max-width: 1000px) {
   
+  .logo{
+  	display: block;
+  	text-align: center;
+  }
+  .head_phone, .search{
+  	display: none;
+  }
+  .search_head{
+  	text-align: center;
+  	padding: 15px 0 0 0;
+  }
+  .slider_txt h5{
+  	font-size: 35px;
+  }
+  .slider_txt{
+  	font-size: 18px;
+  	p{
+  		padding-bottom: 17px;
+  		font-size: 16px;
+  	}
+  }
+  .top_slider_wrap .carousel-caption{
+  	right: 3%;
+  	top: 4%;
+  }
+  .preference_item{
+  	figure{
+  		width: 112px;
+  		height: 112px;
+  		padding: 8px;
+  		figcaption{
+			width: 100px;
+    		height: 96px;
+  			img{
+  				width: 60%;
+  			}
+  		}
+  	}
+  }
+  .foot_info_bottom{
+  	display: none;
+  }
+  .hide_on_mobile{
+  	display: none;
+  }
+
+  //menu
+  .main_menu{
+  	height: auto;
+  	ul {
+  		border: none;
+  		li{
+	  		display: block;
+	  		width: 100%;
+	  		text-align: center;
+	  		border: none;
+	  		a{
+	  			border: none;
+	  		}
+  		}
+  	}
+  	.nav-justified>.dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+    position: static;
+    width: 100%;
+    float: none;
+	}
+  }
+
+ 	.menu_trigger{
+ 		display: block; 
+ 		color: #543060;
+ 		font-size: 18px;
+ 		text-align: center;
+ 		font-family: $fontfamily;
+ 		padding: 10px 0;
+ 	}
+ 		.main_menu .dropdown-menu{
+ 			background:#c3a4cd; 
+ 		}
+ 	.dropdown-nav{
+ 		display: none;
+ 	}
+ 	.main_menu .container.open {
+ 		.dropdown-nav{
+ 			display: block;
+ 		}
+ 	}
+ 	.main_menu .dropdown-menu li a{
+ 		color: #fff;
+ 	}
 }
 
-//styles for ipad
-@include ipad {
-	
+//styles for phones
+@include mq($max-width: 700px) {
+	.top_slider_wrap .carousel-caption{
+		display: none;	
+	}
+	.preference_item {
+		@include povh('');
+		figure{
+			float: left;
+		}
+		p{
+			overflow: hidden;
+			text-align: left;
+			padding: 10px 0 0 22px;
+		}
+	}
+	.about_index figure{
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+	.foot_all_menu{
+	display: none;
+	}
+	.foot_contacts {
+	    font-size: 17px;
+	    width: 148px;
+	    text-align: left;
+	    margin: 0 auto;
+	}
 }
-
-//styles for iphone
-@include iphone5 {
-
-} 

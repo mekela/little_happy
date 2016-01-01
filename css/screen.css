@@ -362,6 +362,10 @@ textarea {
 }
 
 /*--------------main-menu------------*/
+.menu_trigger {
+  display: none;
+}
+
 .main_menu {
   background: #fff;
   height: 57px;
@@ -512,6 +516,7 @@ textarea {
   display: block;
   position: relative;
   overflow: hidden;
+  text-align: center;
   transition: all 0.5s ease;
 }
 
@@ -600,6 +605,7 @@ textarea {
   width: 186px;
   height: 186px;
   border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(54, 54, 54, 0.24);
   background-color: #fff;
   padding: 16px;
   box-sizing: border-box;
@@ -723,3 +729,130 @@ textarea {
 }
 
 /*----------end footer----------*/
+@media only screen and (max-width: 1024px) {
+  img {
+    max-width: 100%;
+  }
+  .foot_contacts {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    display: block;
+    text-align: center;
+  }
+  .head_phone, .search {
+    display: none;
+  }
+  .search_head {
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+  .slider_txt h5 {
+    font-size: 35px;
+  }
+  .slider_txt {
+    font-size: 18px;
+  }
+  .slider_txt p {
+    padding-bottom: 17px;
+    font-size: 16px;
+  }
+  .top_slider_wrap .carousel-caption {
+    right: 3%;
+    top: 4%;
+  }
+  .preference_item figure {
+    width: 112px;
+    height: 112px;
+    padding: 8px;
+  }
+  .preference_item figure figcaption {
+    width: 100px;
+    height: 96px;
+  }
+  .preference_item figure figcaption img {
+    width: 60%;
+  }
+  .foot_info_bottom {
+    display: none;
+  }
+  .hide_on_mobile {
+    display: none;
+  }
+  .main_menu {
+    height: auto;
+  }
+  .main_menu ul {
+    border: none;
+  }
+  .main_menu ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+  .main_menu ul li a {
+    border: none;
+  }
+  .main_menu .nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+    position: static;
+    width: 100%;
+    float: none;
+  }
+  .menu_trigger {
+    display: block;
+    color: #543060;
+    font-size: 18px;
+    text-align: center;
+    font-family: "MinionPro";
+    padding: 10px 0;
+  }
+  .main_menu .dropdown-menu {
+    background: #c3a4cd;
+  }
+  .dropdown-nav {
+    display: none;
+  }
+  .main_menu .container.open .dropdown-nav {
+    display: block;
+  }
+  .main_menu .dropdown-menu li a {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .top_slider_wrap .carousel-caption {
+    display: none;
+  }
+  .preference_item {
+    position: relative;
+    overflow: hidden;
+  }
+  .preference_item figure {
+    float: left;
+  }
+  .preference_item p {
+    overflow: hidden;
+    text-align: left;
+    padding: 10px 0 0 22px;
+  }
+  .about_index figure {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .foot_all_menu {
+    display: none;
+  }
+  .foot_contacts {
+    font-size: 17px;
+    width: 148px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
