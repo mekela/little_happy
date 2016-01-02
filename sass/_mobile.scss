@@ -106,6 +106,14 @@
  	.main_menu .dropdown-menu li a{
  		color: #fff;
  	}
+
+  .basket_table{
+    table{
+      td{
+        padding: 10px 0;
+      }
+    }
+  }    
 }
 
 //styles for phones
@@ -137,4 +145,62 @@
 	    text-align: left;
 	    margin: 0 auto;
 	}
+}
+
+@include mq($max-width: 530px) {
+  .basket_table select{
+    width: 70px;
+    padding: 0;
+  }
+  .number input{
+    width: 51px;
+  }
+  .number{
+    width: 72px;
+  }
+}
+
+@include mq($max-width: 450px) {
+  .basket_table table thead{
+    display: none;
+  }
+  .basket_table table td {
+    padding: 10px;
+    display: block;
+    border: none;
+    text-align: center;
+  }
+ .basket_table table  tr{
+    display: block;
+    border-bottom: 1px solid #ded9f7;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+  .number{
+    width: 150px;
+    input{
+      width: 120px;
+    }
+    span{
+      display: none;
+    }
+  }
+   .basket_table select{
+    width: 70%;
+    padding: 0 2%;
+  }
+  .basket_table section .button, .basket_table section span{
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .basket_form input{
+    width: 100%;
+  }
+  .basket_form .button{
+    text-align: center;
+    width: 100%;
+  }
 }
