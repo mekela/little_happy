@@ -2,6 +2,18 @@
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
 //styles for ipad horz
+@include mq($width: 1024px) {
+  .product_img_wrap .big_image{
+    float: none;
+  }
+  .product_img_wrap .thumbnails{
+    float: none;
+    padding-top: 15px;
+    li{
+      display: inline-block;
+    }
+  }
+}
 @include mq($max-width: 1024px) {
   img{
   	max-width: 100%;
@@ -114,6 +126,10 @@
       }
     }
   }    
+
+  .product_img_wrap{
+    margin-bottom: 30px;
+  }
 }
 
 //styles for phones
@@ -145,6 +161,40 @@
 	    text-align: left;
 	    margin: 0 auto;
 	}
+
+  .product_img_wrap .big_image{
+    float: none;
+  }
+  .product_img_wrap .thumbnails{
+    float: none;
+    padding-top: 15px;
+    text-align: center;
+    li{
+      display: inline-block;
+    }
+  }
+
+  .product_img_wrap .big_image{
+    width: 100%;
+    height: auto;
+    a{
+       width: 100%;
+       height: auto;
+    }
+  }
+  .product_text_wrap{
+    text-align: center;
+  }
+  .product_tabs .tabs li a{
+    padding: 0 10px;
+  }
+  .product_choose_item{
+    padding-bottom: 15px;
+  }
+  .product_manager {
+    padding: 20px 20px 20px 20px;
+    background: #f0effc;
+  }
 }
 
 @include mq($max-width: 530px) {
@@ -202,5 +252,8 @@
   .basket_form .button{
     text-align: center;
     width: 100%;
+  }
+  .product_buttons span{
+    font-size: 15px;
   }
 }

@@ -109,129 +109,181 @@
 	<!--end-bread-->
 
 	<div class="container">
-		<div class="title">Корзина</div>
+		<!--product-top-->
+		<div class="product_wrap">
+			<div class="row">
+				<div class="col-md-7 product_img_wrap">
+					<div class="big_image easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+						<a href="img/product_xxl.jpg">
+							<img src="img/product_big.jpg" alt="" />
+						</a>
+					</div>
 
-		<!--basket-table-->
-		<div class="basket_table">
-			<div class="basket_table_block">
-			<table>
-				<thead>
-					<tr>
-						<th>Товар</th>
-						<th>Количество</th>
-						<th>Размер </th>
-						<th>Цена</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<a href="#"><img src="img/product_small.jpg" alt=""></a>
-							<a href="#">Человечек белый</a>
-						</td>
-						<td>
-							<a href="#"><img src="img/icons/basket_black.png" alt=""></a>
+					<ul class="thumbnails">
+						<li>
+							<a href="img/product_xxl.jpg" data-standard="img/product_big.jpg">
+								<img src="img/product_small.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="example-images/3_zoom_2.jpg" data-standard="example-images/3_standard_2.jpg">
+								<img src="example-images/3_thumbnail_2.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="example-images/3_zoom_3.jpg" data-standard="example-images/3_standard_3.jpg">
+								<img src="example-images/3_thumbnail_3.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="example-images/3_zoom_4.jpg" data-standard="example-images/3_standard_4.jpg">
+								<img src="example-images/3_thumbnail_4.jpg" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5 product_text_wrap">
+					<h1>Человечек белый</h1>
+					<nav class="tags">
+						<a href="#" class="have">Есть в наличии</a>
+						<a href="#" class="nothave">По предзаказу</a>
+					</nav>
+					<p>Артикул 456 <br>Полотно: хлопок</p>
+					<div class="price">320 грн</div>
+					<div class="product_choose">
+						<div class="product_choose_item">
+							<label>Количество</label>
 							<div class="number">
 							    <input type="text" value="1"/>
 							    <span class="minus">-</span>
 							    <span class="plus">+</span>
 							</div>
-						</td>
-						<td>
+						</div>
+						<div class="product_choose_item">
+							<label>Размер</label>
 							<select>
 								<option>0-6 мес</option>
 								<option>0-6 мес</option>
 								<option>0-6 мес</option>
 								<option>0-6 мес</option>
 							</select>
-						</td>
-						<td>
-							320 грн
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="#"><img src="img/product_small.jpg" alt=""></a>
-							<a href="#">Человечек белый</a>
-						</td>
-						<td>
-							<a href="#"><img src="img/icons/basket_black.png" alt=""></a>
-							<div class="number">
-							    <input type="text" value="1"/>
-							    <span class="minus">-</span>
-							    <span class="plus">+</span>
-							</div>
-						</td>
-						<td>
-							<select>
-								<option>0-6 мес</option>
-								<option>0-6 мес</option>
-								<option>0-6 мес</option>
-								<option>0-6 мес</option>
-							</select>
-						</td>
-						<td>
-							320 грн
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="#"><img src="img/product_small.jpg" alt=""></a>
-							<a href="#">Человечек белый</a>
-						</td>
-						<td>
-							<a href="#"><img src="img/icons/basket_black.png" alt=""></a>
-							<div class="number">
-							    <input type="text" value="1"/>
-							    <span class="minus">-</span>
-							    <span class="plus">+</span>
-							</div>
-						</td>
-						<td>
-							<select>
-								<option>0-6 мес</option>
-								<option>0-6 мес</option>
-								<option>0-6 мес</option>
-								<option>0-6 мес</option>
-							</select>
-						</td>
-						<td>
-							320 грн
-						</td>
-					</tr>
-				</tbody>
-			</table>
+						</div>
+					</div>
+					<div class="product_buttons">
+						<div class="basket_head">
+							<a href="#">
+								Купить
+								<img src="img/icons/basket_icon.png" alt="">
+							</a>
+						</div>
+						<span><a href="#">Купить в один клик</a></span>
+					</div>
+					<div class="product_manager">
+						Если у вас возникли вопросы об этом товаре, свяжитесь с нами по телефонам
+						<b>+38 (097) 675 44 55,  
+						  +38 (097) 675 44 33</b>
+					</div>
+					<div class="share">
+						<span>Поделиться</span>
+						<img src="img/social.jpg" alt="">
+					</div>
+				</div>
 			</div>
-			<section>
-				<a href="#" class="button">Продолжить покупки</a>
-				<span>Итого: <b>960 грн</b></span>
-			</section>
 		</div>
-		<!--end-basket-table-->
-
-		<!--basket-form-->
-		<div class="basket_form">
-			<div class="title">Оформить заказ</div>
-			<form action="#">
-				<div>
-					<label>Ваше имя</label>
-					<input type="text">
+		<!--end-product-top-->
+		
+		<!--product-tabs-->
+		<div class="product_tabs">
+			<ul class="tabs">
+				<li><a href="#tab1" class='active'>О товаре</a></li>
+				<li><a href="#tab2">Отзывы</a></li>
+			</ul>
+			<div class="product_tabs_content">
+				<div class="product_tabs_item" id='tab1'>
+					<blockquote>Иррациональное в творчестве, в первом приближении, представляет собой культовый образ. Классицизм органичен. Нивелирование индивидуальности синхронно.
+					</blockquote>
+					<p>
+					Художественная богема изящно начинает эйдос, однако само по себе состояние игры всегда амбивалентно. Рецептивная эстетика использует первоначальный модернизм. Флобер, описывая нервный припадок Эммы Бовари, переживает его сам: психологический параллелизм трансформирует эпитет. </p>
 				</div>
-				<div>
-					<label>Имейл</label>
-					<input type="email">
+				<div class="product_tabs_item" id='tab2'>
+					<blockquote>приближении, представляет собой культовый образ. Классицизм органичен. Нивелирование индивидуальности синхронно.
+					</blockquote>
+					<p>
+					Художественная богема изящно начинает эйдос, однако само по себе состояние игры всегда амбивалентно. Рецептивная эстетика использует первоначальный модернизм. Флобер, описывая нервный припадок Эммы Бовари, переживает его сам: психологический параллелизм трансформирует эпитет. </p>
 				</div>
-				<div>
-					<label>Адрес</label>
-					<input type="text">
-				</div>
-				<div>
-					<button class="button">Оформить</button>
-				</div>
-			</form>
+			</div>
 		</div>
-		<!--end-basket-form-->
+		<!--end-product-tabs-->
 
+		<!--new-products-->
+		<div class="new_products_wrap container">
+			<div class="title">Вам также может понравиться</div>
+			<div class="products_block">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="products_item">
+							<figure>
+								<a href="#"><img src="img/product.jpg" alt=""></a>
+								<figcaption>
+									Новинка
+									<small><span class="glyphicon glyphicon-star"></span></small>
+								</figcaption>
+							</figure>
+							<p>
+								<a href="#">Человечек белый</a>
+								<span>320 грн</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="products_item">
+							<figure>
+								<a href="#"><img src="img/product.jpg" alt=""></a>
+								<figcaption>
+									Новинка
+									<small><span class="glyphicon glyphicon-star"></span></small>
+								</figcaption>
+							</figure>
+							<p>
+								<a href="#">Человечек белый</a>
+								<span>320 грн</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="products_item">
+							<figure>
+								<a href="#"><img src="img/product.jpg" alt=""></a>
+								<figcaption>
+									Новинка
+									<small><span class="glyphicon glyphicon-star"></span></small>
+								</figcaption>
+							</figure>
+							<p>
+								<a href="#">Человечек белый</a>
+								<span>320 грн</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="products_item">
+							<figure>
+								<a href="#"><img src="img/product.jpg" alt=""></a>
+								<figcaption>
+									Новинка
+									<small><span class="glyphicon glyphicon-star"></span></small>
+								</figcaption>
+							</figure>
+							<p>
+								<a href="#">Человечек белый</a>
+								<span>320 грн</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-new-products-->
 	</div>
 
 </div>
