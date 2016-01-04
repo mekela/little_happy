@@ -1,6 +1,16 @@
 // Normally mainpage styles
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
+@include mq($max-width: 1090px) {
+  .top_slider_wrap .carousel-caption {
+    right: 9%;
+    top: 1%;
+  }
+  .main_menu li a{
+    font-size: 16px;
+  }
+}
+
 //styles for ipad horz
 @include mq($width: 1024px) {
   .product_img_wrap .big_image{
@@ -25,6 +35,28 @@
 
 //styles for ipad vert
 @include mq($max-width: 1000px) {
+
+  .number span{
+        font-size: 33px;
+  }
+    .number span.plus {
+      top: -4px;
+      right: 17px;
+    }
+    .number span.minus {
+    top: -16px;
+    right: auto;
+    left: 20px;
+    font-size: 48px;
+    }
+  .basket_table{
+    .number{
+      width: 82px;
+    }
+    .number span.minus{
+      left: 5px;
+    }
+   } 
   
   .logo{
   	display: block;
@@ -76,14 +108,15 @@
   .main_menu{
   	height: auto;
   	ul {
-  		border: none;
+  		background: none;
   		li{
 	  		display: block;
 	  		width: 100%;
 	  		text-align: center;
-	  		border: none;
+	  		background: none;
+        /* border-bottom: 1px solid #eee5f1; */
 	  		a{
-	  			border: none;
+	  			background: none;
 	  		}
   		}
   	}
@@ -95,7 +128,10 @@
     float: none;
 	}
   }
-
+  .main_menu, .main_menu .container {
+    width: 100%;
+    padding: 0;
+  }
  	.menu_trigger{
  		display: block; 
  		color: #543060;
@@ -103,6 +139,8 @@
  		text-align: center;
  		font-family: $fontfamily;
  		padding: 10px 0;
+    box-shadow: 0 5px 3px #efefef;
+    width: 100%;
  	}
  		.main_menu .dropdown-menu{
  			background:#c3a4cd; 
@@ -130,6 +168,11 @@
   .product_img_wrap{
     margin-bottom: 30px;
   }
+
+  .product_wrap{
+    text-align: center;
+
+  }
 }
 
 //styles for phones
@@ -137,6 +180,13 @@
 	.top_slider_wrap .carousel-caption{
 		display: none;	
 	}
+  .baby{
+    width: 100%;
+    text-align: center;
+    img{
+      width: 50%;
+    }
+  }
 	.preference_item {
 		@include povh('');
 		figure{
@@ -195,6 +245,17 @@
     padding: 20px 20px 20px 20px;
     background: #f0effc;
   }
+
+  .foot_info_bottom{
+    display: block;
+    text-align: center;
+    .counters{
+      display: none;
+    }
+  }
+  .products_item{
+    margin: 0 20px 40px 20px;
+  }
 }
 
 @include mq($max-width: 530px) {
@@ -209,8 +270,10 @@
     width: 72px;
   }
 }
-
-@include mq($max-width: 450px) {
+@include mq($max-width: 700px) {
+  .products_item{
+    margin: 0 0px 40px 0px;
+  }
   .basket_table table thead{
     display: none;
   }
@@ -227,6 +290,17 @@
       border-bottom: none;
     }
   }
+  .basket_table .number span.plus {
+    top: -4px;
+    right: 8px;
+  }
+  .basket_table .number span.minus {
+    left: 11px;
+  }
+}
+
+@include mq($max-width: 450px) {
+  
   .number{
     width: 150px;
     input{

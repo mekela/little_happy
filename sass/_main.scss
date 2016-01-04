@@ -100,7 +100,7 @@
 			padding-top: 6px;
 		}
 		ul{
-			border-right: 1px solid #e3d5e8;
+			background: url('../img/icons/border_menu.png') center right no-repeat;
 		}
 		li {
 			a{
@@ -108,11 +108,11 @@
 				font-size: 18px;
 				font-family: $fontfamily;
 				text-decoration: none;
-				border-left: 1px solid #e3d5e8;
+				background: url('../img/icons/border_menu.png') center left no-repeat;
 				border-radius: 0;
 				box-sizing: border-box;
 				&:hover, &:active{
-					background: none !important;
+					background: url('../img/icons/border_menu.png') center left no-repeat !important;
 					color: #bea1c7;
 					font-weight: bold;
 				}
@@ -123,7 +123,7 @@
 			}
 			&.open{
 				& > a{
-					background: none !important;
+					background:  url('../img/icons/border_menu.png') center left no-repeat !important;
 					border-color: #e3d5e8 !important;
 					color: #bea1c7;
 					font-weight: bold;
@@ -139,7 +139,11 @@
 			li {
 				a{
 					border: none;
+					background: none;
 					border-bottom: 1px solid #e3d4e7;
+					&:hover{
+						background: none !important;
+					}
 				}
 			}
 		}
@@ -193,6 +197,15 @@
 				border:1px solid #fff;
 				background: none;
 				font-size: 18px;
+			}
+		}
+		.baby{
+			position: absolute;
+			left: 0;
+			top: -24%;
+			width: 55%;
+			img{
+				width: 100%;
 			}
 		}
 	/*-------end-slider--------*/

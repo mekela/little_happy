@@ -365,7 +365,7 @@ textarea {
 }
 
 .main_menu ul {
-  border-right: 1px solid #e3d5e8;
+  background: url("../img/icons/border_menu.png") center right no-repeat;
 }
 
 .main_menu li a {
@@ -373,13 +373,13 @@ textarea {
   font-size: 18px;
   font-family: "MinionPro";
   text-decoration: none;
-  border-left: 1px solid #e3d5e8;
+  background: url("../img/icons/border_menu.png") center left no-repeat;
   border-radius: 0;
   box-sizing: border-box;
 }
 
 .main_menu li a:hover, .main_menu li a:active {
-  background: none !important;
+  background: url("../img/icons/border_menu.png") center left no-repeat !important;
   color: #bea1c7;
   font-weight: bold;
 }
@@ -390,7 +390,7 @@ textarea {
 }
 
 .main_menu li.open > a {
-  background: none !important;
+  background: url("../img/icons/border_menu.png") center left no-repeat !important;
   border-color: #e3d5e8 !important;
   color: #bea1c7;
   font-weight: bold;
@@ -406,7 +406,12 @@ textarea {
 
 .main_menu .dropdown-menu li a {
   border: none;
+  background: none;
   border-bottom: 1px solid #e3d4e7;
+}
+
+.main_menu .dropdown-menu li a:hover {
+  background: none !important;
 }
 
 /*-------------end-main-menu------------*/
@@ -464,6 +469,17 @@ textarea {
   border: 1px solid #fff;
   background: none;
   font-size: 18px;
+}
+
+.baby {
+  position: absolute;
+  left: 0;
+  top: -24%;
+  width: 55%;
+}
+
+.baby img {
+  width: 100%;
 }
 
 /*-------end-slider--------*/
@@ -1180,6 +1196,16 @@ textarea {
 
 /*---end-product-tabs------*/
 /*--------end--product-page---------*/
+@media only screen and (max-width: 1090px) {
+  .top_slider_wrap .carousel-caption {
+    right: 9%;
+    top: 1%;
+  }
+  .main_menu li a {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (width: 1024px) {
   .product_img_wrap .big_image {
     float: none;
@@ -1203,6 +1229,25 @@ textarea {
 }
 
 @media only screen and (max-width: 1000px) {
+  .number span {
+    font-size: 33px;
+  }
+  .number span.plus {
+    top: -4px;
+    right: 17px;
+  }
+  .number span.minus {
+    top: -16px;
+    right: auto;
+    left: 20px;
+    font-size: 48px;
+  }
+  .basket_table .number {
+    width: 82px;
+  }
+  .basket_table .number span.minus {
+    left: 5px;
+  }
   .logo {
     display: block;
     text-align: center;
@@ -1250,16 +1295,17 @@ textarea {
     height: auto;
   }
   .main_menu ul {
-    border: none;
+    background: none;
   }
   .main_menu ul li {
     display: block;
     width: 100%;
     text-align: center;
-    border: none;
+    background: none;
+    /* border-bottom: 1px solid #eee5f1; */
   }
   .main_menu ul li a {
-    border: none;
+    background: none;
   }
   .main_menu .nav-justified > .dropdown .dropdown-menu {
     top: auto;
@@ -1268,6 +1314,10 @@ textarea {
     width: 100%;
     float: none;
   }
+  .main_menu, .main_menu .container {
+    width: 100%;
+    padding: 0;
+  }
   .menu_trigger {
     display: block;
     color: #543060;
@@ -1275,6 +1325,8 @@ textarea {
     text-align: center;
     font-family: "MinionPro";
     padding: 10px 0;
+    box-shadow: 0 5px 3px #efefef;
+    width: 100%;
   }
   .main_menu .dropdown-menu {
     background: #c3a4cd;
@@ -1294,11 +1346,21 @@ textarea {
   .product_img_wrap {
     margin-bottom: 30px;
   }
+  .product_wrap {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .top_slider_wrap .carousel-caption {
     display: none;
+  }
+  .baby {
+    width: 100%;
+    text-align: center;
+  }
+  .baby img {
+    width: 50%;
   }
   .preference_item {
     position: relative;
@@ -1357,6 +1419,16 @@ textarea {
     padding: 20px 20px 20px 20px;
     background: #f0effc;
   }
+  .foot_info_bottom {
+    display: block;
+    text-align: center;
+  }
+  .foot_info_bottom .counters {
+    display: none;
+  }
+  .products_item {
+    margin: 0 20px 40px 20px;
+  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -1372,7 +1444,10 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
+  .products_item {
+    margin: 0 0px 40px 0px;
+  }
   .basket_table table thead {
     display: none;
   }
@@ -1389,6 +1464,16 @@ textarea {
   .basket_table table tr:last-child {
     border-bottom: none;
   }
+  .basket_table .number span.plus {
+    top: -4px;
+    right: 8px;
+  }
+  .basket_table .number span.minus {
+    left: 11px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .number {
     width: 150px;
   }
