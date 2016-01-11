@@ -1196,13 +1196,20 @@ textarea {
 
 /*---end-product-tabs------*/
 /*--------end--product-page---------*/
-@media only screen and (max-width: 1090px) {
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
   .top_slider_wrap .carousel-caption {
     right: 9%;
     top: 1%;
   }
   .main_menu li a {
     font-size: 16px;
+  }
+  .about_index figure img {
+    max-width: 100%;
+  }
+  .product_img_wrap .thumbnails li {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
 
@@ -1351,6 +1358,15 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 760px) {
+  .about_index .col-md-3 {
+    text-align: center;
+  }
+  .foot_all_menu {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .top_slider_wrap .carousel-caption {
     display: none;
@@ -1405,6 +1421,8 @@ textarea {
   .product_img_wrap .big_image a {
     width: 100%;
     height: auto;
+    text-align: center;
+    display: block;
   }
   .product_text_wrap {
     text-align: center;
