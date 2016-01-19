@@ -180,6 +180,10 @@
     text-align: center;
 
   }
+
+  .sidebar_menu_block{
+    display: block !important;
+  }
 }
 
 @include mq($max-width: 760px) {
