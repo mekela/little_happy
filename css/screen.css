@@ -396,10 +396,14 @@ textarea {
   font-weight: bold;
 }
 
+.main_menu li:hover .dropdown-menu {
+  display: block !important;
+}
+
 .main_menu .dropdown-menu {
   box-shadow: none;
   border: none;
-  margin-top: 10px;
+  margin-top: 0px;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.84);
 }
@@ -1236,6 +1240,9 @@ textarea {
 }
 
 @media only screen and (max-width: 1000px) {
+  .dropdown-menu {
+    display: block !important;
+  }
   .number span {
     font-size: 33px;
   }
