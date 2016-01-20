@@ -16,7 +16,7 @@ $(document).ready(function() {
 	//sidebar menu
 	$( ".sidebar_menu_block" ).hide();
 
-	$( ".js-show-sid-menu" ).mouseover(function() {
+	$( ".js-show-sid-menu" ).click(function() {
 	  $(this).next().slideToggle( "slow");
 	});
 

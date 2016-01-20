@@ -959,10 +959,6 @@ textarea {
   cursor: pointer;
 }
 
-.sidebar_menu_trigger a {
-  text-decoration: none;
-}
-
 .sidebar_menu_block {
   padding: 15px 19px;
   color: #543060;
@@ -1359,9 +1355,6 @@ textarea {
   }
   .product_wrap {
     text-align: center;
-  }
-  .sidebar_menu_block {
-    display: block !important;
   }
 }
 
